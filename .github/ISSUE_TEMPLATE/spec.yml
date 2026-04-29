@@ -1,0 +1,76 @@
+name: 📋 Specification Request
+description: Propose a new feature specification (Stage 2 — Spec)
+title: "[SPEC] "
+labels: [ "spec", "stage-2" ]
+projects: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > Use this template when you are starting a new spec in `.specs/<NNN>-<feature>/`.
+        > The Requirements Engineer or Product Owner typically opens this issue.
+
+  - type: input
+    id: feature-id
+    attributes:
+      label: Feature ID
+      description: Three-digit number — must match the folder name in `.specs/`
+      placeholder: "003"
+    validations:
+      required: true
+
+  - type: input
+    id: feature-name
+    attributes:
+      label: Feature name (kebab-case)
+      placeholder: "payment-cycle-generation"
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-goal
+    attributes:
+      label: Business goal
+      description: What outcome does this feature enable? Tie to a SIFAP business rule
+        when possible.
+      placeholder: "Allow operators to generate monthly payment cycles for active
+        beneficiaries..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: ears-requirements
+    attributes:
+      label: Initial EARS requirements (draft)
+      description: Use the 6 EARS patterns. The Requirements Engineer will refine these.
+      value: |
+        - REQ-XXX-001 (Ubiquitous): The system shall ...
+        - REQ-XXX-002 (Event-driven): When ..., the system shall ...
+        - REQ-XXX-003 (State-driven): While ..., the system shall ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: How will you verify the spec is complete?
+      placeholder: |
+        - [ ] All requirements use a valid EARS pattern
+        - [ ] Each requirement is testable
+        - [ ] Product Owner has signed off on scope
+    validations:
+      required: true
+
+  - type: dropdown
+    id: lead-persona
+    attributes:
+      label: Lead persona
+      options:
+        - Requirements Engineer
+        - Product Owner
+        - Software Architect
+        - Enterprise Architect
+    validations:
+      required: true

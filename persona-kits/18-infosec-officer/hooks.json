@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "preToolUse": [
+      {
+        "trigger": "edit_file",
+        "description": "Scan for secrets before saving",
+        "command": "if command -v gitleaks >/dev/null 2>&1; then gitleaks detect --no-banner --redact --source=$TOOL_FILE 2>&1 | grep -q 'leaks found' && echo DENY: potential secret detected in $TOOL_FILE && exit 1; fi; true"
+      }
+    ],
+    "postToolUse": [
+      {
+        "trigger": "edit_file",
+        "description": "Re-scan after edit",
+        "command": "if command -v gitleaks >/dev/null 2>&1; then gitleaks detect --no-banner --redact --source=$TOOL_FILE 2>/dev/null || true; fi; true"
+      }
+    ]
+  }
+}

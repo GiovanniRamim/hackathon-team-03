@@ -1,0 +1,23 @@
+{
+  "hooks": {
+    "preToolUse": [
+      {
+        "trigger": "edit_file",
+        "description": "Warn when editing runbooks without updating last-reviewed date",
+        "command": "if echo $TOOL_FILE | grep -qE 'runbook|RUNBOOK'; then echo REMINDER: update last-reviewed date and on-call owner in the runbook header; fi; true"
+      }
+    ],
+    "postToolUse": [
+      {
+        "trigger": "edit_file",
+        "description": "Lint markdown runbooks",
+        "command": "if echo $TOOL_FILE | grep -qE '\\.md$' && echo $TOOL_FILE | grep -qE 'runbook|RUNBOOK'; then npx markdownlint $TOOL_FILE 2>/dev/null || true; fi; true"
+      },
+      {
+        "trigger": "edit_file",
+        "description": "Validate SLO YAML",
+        "command": "if echo $TOOL_FILE | grep -qE 'slo.*\\.ya?ml$'; then npx --yes ajv-cli validate -s slo.schema.json -d $TOOL_FILE 2>/dev/null || true; fi; true"
+      }
+    ]
+  }
+}

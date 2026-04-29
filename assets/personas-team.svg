@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Inter, system-ui, sans-serif">
+  <rect width="1200" height="520" fill="#F7F7F5"/>
+
+  <text x="60" y="60" fill="#737373" font-family="JetBrains Mono, monospace" font-size="16" font-weight="500" letter-spacing="1.9">TEAM · 10 PEOPLE · 4 CLUSTERS</text>
+  <text x="60" y="110" fill="#1A1A1A" font-size="42" font-weight="500" letter-spacing="-0.8">Personas per team</text>
+  <text x="60" y="148" fill="#737373" font-size="20">One dominant accent per cluster. Cover every angle of the modernization.</text>
+
+  <g transform="translate(60, 200)">
+    <rect width="260" height="300" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="260" height="6" fill="#F25022"/>
+    <text x="24" y="48" fill="#B33816" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" letter-spacing="1.2">PRODUCT CLUSTER</text>
+    <text x="24" y="88" fill="#1A1A1A" font-size="26" font-weight="500">Product</text>
+    <text x="24" y="118" fill="#737373" font-size="14">Owns the why and the what.</text>
+    <g transform="translate(24, 150)">
+      <circle cx="8" cy="8" r="6" fill="#F25022"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">Product Owner</text>
+    </g>
+    <g transform="translate(24, 180)">
+      <circle cx="8" cy="8" r="6" fill="#F25022"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">Business Analyst</text>
+    </g>
+    <g transform="translate(24, 210)">
+      <circle cx="8" cy="8" r="6" fill="#F25022"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">UX Designer</text>
+    </g>
+  </g>
+
+  <g transform="translate(340, 200)">
+    <rect width="260" height="300" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="260" height="6" fill="#00A4EF"/>
+    <text x="24" y="48" fill="#0076AC" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" letter-spacing="1.2">ARCHITECTURE CLUSTER</text>
+    <text x="24" y="88" fill="#1A1A1A" font-size="26" font-weight="500">Architect</text>
+    <text x="24" y="118" fill="#737373" font-size="14">Owns the how and the shape.</text>
+    <g transform="translate(24, 150)">
+      <circle cx="8" cy="8" r="6" fill="#00A4EF"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">Solution Architect</text>
+    </g>
+    <g transform="translate(24, 180)">
+      <circle cx="8" cy="8" r="6" fill="#00A4EF"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">Tech Lead</text>
+    </g>
+  </g>
+
+  <g transform="translate(620, 200)">
+    <rect width="260" height="300" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="260" height="6" fill="#7FBA00"/>
+    <text x="24" y="48" fill="#5A8500" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" letter-spacing="1.2">BUILD CLUSTER</text>
+    <text x="24" y="88" fill="#1A1A1A" font-size="26" font-weight="500">Build</text>
+    <text x="24" y="118" fill="#737373" font-size="14">Ships the working software.</text>
+    <g transform="translate(24, 150)">
+      <circle cx="8" cy="8" r="6" fill="#7FBA00"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">Backend Engineer</text>
+    </g>
+    <g transform="translate(24, 180)">
+      <circle cx="8" cy="8" r="6" fill="#7FBA00"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">Frontend Engineer</text>
+    </g>
+    <g transform="translate(24, 210)">
+      <circle cx="8" cy="8" r="6" fill="#7FBA00"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">QA Engineer</text>
+    </g>
+  </g>
+
+  <g transform="translate(900, 200)">
+    <rect width="240" height="300" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="6" fill="#FFB900"/>
+    <text x="24" y="48" fill="#B88500" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" letter-spacing="1.2">OPS CLUSTER</text>
+    <text x="24" y="88" fill="#1A1A1A" font-size="26" font-weight="500">Ops</text>
+    <text x="24" y="118" fill="#737373" font-size="14">Runs it in production.</text>
+    <g transform="translate(24, 150)">
+      <circle cx="8" cy="8" r="6" fill="#FFB900"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">DevOps Engineer</text>
+    </g>
+    <g transform="translate(24, 180)">
+      <circle cx="8" cy="8" r="6" fill="#FFB900"/>
+      <text x="24" y="13" fill="#1A1A1A" font-size="15">SRE</text>
+    </g>
+  </g>
+</svg>

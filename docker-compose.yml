@@ -1,0 +1,72 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: sifap-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-sifap}
+      POSTGRES_USER: ${POSTGRES_USER:-sifap}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sifap_local}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-sifap}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - sifap-net
+
+  backend:
+    build:
+      context: ./prototype/backend
+      dockerfile: Dockerfile
+    container_name: sifap-backend
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB:-sifap}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-sifap}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:-sifap_local}
+      SIFAP_JWT_SECRET: ${SIFAP_JWT_SECRET:-docker-dev-secret-min-32-chars-long!!}
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/actuator/health | grep -q UP || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - sifap-net
+
+  frontend:
+    build:
+      context: ./prototype/frontend
+      dockerfile: Dockerfile
+    container_name: sifap-frontend
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://backend:8080
+    ports:
+      - "3001:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget --spider http://localhost:3000/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - sifap-net
+
+volumes:
+  pgdata:
+
+networks:
+  sifap-net:
+    driver: bridge

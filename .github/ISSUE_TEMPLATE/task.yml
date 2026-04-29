@@ -1,0 +1,96 @@
+name: ✅ Implementation Task
+description: A single, scoped implementation task derived from a spec
+title: "[T-NNN] "
+labels: [ "task", "stage-3" ]
+projects: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > Use this template for one implementation task at a time.
+        > Tasks come from `.specs/<NNN>-<feature>/TASKS.md`.
+
+  - type: input
+    id: task-id
+    attributes:
+      label: Task ID
+      placeholder: "T-007"
+    validations:
+      required: true
+
+  - type: input
+    id: feature-folder
+    attributes:
+      label: Feature folder
+      placeholder: ".specs/003-payment-cycle-generation/"
+    validations:
+      required: true
+
+  - type: input
+    id: req-ids
+    attributes:
+      label: REQ-IDs implemented
+      description: Comma-separated list of all requirement IDs this task satisfies.
+      placeholder: "REQ-PAY-014, REQ-PAY-015"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria (from the spec)
+      description: Copy from `SPECIFICATION.md` so the implementer doesn't need to
+        switch files.
+      placeholder: |
+        - When a payment cycle is created with status `OPEN`, the system shall ...
+        - If a beneficiary's status is `SUSPENDED`, the system shall NOT include them ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity estimate
+      options:
+        - XS (<1h)
+        - S (1-2h)
+        - M (2-4h)
+        - L (4-8h)
+        - XL (>1 day)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: lead-persona
+    attributes:
+      label: Lead persona
+      options:
+        - Developer
+        - DBA
+        - QA Engineer
+        - DevOps Engineer
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Depends on
+      placeholder: |
+        - T-005 (Beneficiary entity must exist)
+        - ADR-0003 (Persistence strategy decided)
+
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      value: |
+        - [ ] At least one test per acceptance criterion (red → green → refactor)
+        - [ ] All public methods that satisfy a `REQ-ID` have `@implements REQ-NNN` Javadoc
+        - [ ] CI is green (build, lint, type-check, tests, coverage)
+        - [ ] The corresponding box in `TASKS.md` is checked
+        - [ ] PR title uses Conventional Commits and links this issue
+        - [ ] At least one persona-pair review on the PR
+    validations:
+      required: true

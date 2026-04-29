@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" font-family="Inter, system-ui, sans-serif">
+  <rect width="1200" height="480" fill="#F7F7F5"/>
+
+  <text x="60" y="60" fill="#737373" font-family="JetBrains Mono, monospace" font-size="16" font-weight="500" letter-spacing="1.9">DAY 2 · STAGE FLOW</text>
+  <text x="60" y="110" fill="#1A1A1A" font-size="42" font-weight="500" letter-spacing="-0.8">Four stages, one narrative arc</text>
+  <text x="60" y="148" fill="#737373" font-size="20">From exploring the legacy to evolving the modern system with agents</text>
+
+  <g transform="translate(60, 200)">
+    <rect width="260" height="240" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="260" height="6" fill="#F25022"/>
+    <text x="24" y="48" fill="#B33816" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" letter-spacing="1.2">ESTAGIO 01</text>
+    <text x="24" y="110" fill="#F25022" font-size="72" font-weight="300" letter-spacing="-3">01</text>
+    <text x="24" y="150" fill="#1A1A1A" font-size="22" font-weight="500">Arqueologia</text>
+    <text x="24" y="174" fill="#1A1A1A" font-size="22" font-weight="500">Digital</text>
+    <text x="24" y="210" fill="#737373" font-size="14">Read the legacy.</text>
+    <text x="24" y="228" fill="#737373" font-size="14">Map business rules.</text>
+  </g>
+
+  <g transform="translate(340, 200)">
+    <rect width="260" height="240" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="260" height="6" fill="#00A4EF"/>
+    <text x="24" y="48" fill="#0076AC" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" letter-spacing="1.2">ESTAGIO 02</text>
+    <text x="24" y="110" fill="#00A4EF" font-size="72" font-weight="300" letter-spacing="-3">02</text>
+    <text x="24" y="150" fill="#1A1A1A" font-size="22" font-weight="500">Spec</text>
+    <text x="24" y="174" fill="#1A1A1A" font-size="22" font-weight="500">Moderna</text>
+    <text x="24" y="210" fill="#737373" font-size="14">Write EARS requirements.</text>
+    <text x="24" y="228" fill="#737373" font-size="14">Define architecture.</text>
+  </g>
+
+  <g transform="translate(620, 200)">
+    <rect width="260" height="240" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="260" height="6" fill="#7FBA00"/>
+    <text x="24" y="48" fill="#5A8500" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" letter-spacing="1.2">ESTAGIO 03</text>
+    <text x="24" y="110" fill="#7FBA00" font-size="72" font-weight="300" letter-spacing="-3">03</text>
+    <text x="24" y="150" fill="#1A1A1A" font-size="22" font-weight="500">Reconstrucao</text>
+    <text x="24" y="174" fill="#1A1A1A" font-size="22" font-weight="500">SIFAP 2.0</text>
+    <text x="24" y="210" fill="#737373" font-size="14">Java 21 + Spring Boot 3.</text>
+    <text x="24" y="228" fill="#737373" font-size="14">Next.js 15 frontend.</text>
+  </g>
+
+  <g transform="translate(900, 200)">
+    <rect width="240" height="240" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="6" fill="#FFB900"/>
+    <text x="24" y="48" fill="#B88500" font-family="JetBrains Mono, monospace" font-size="11" font-weight="500" letter-spacing="1.2">ESTAGIO 04</text>
+    <text x="24" y="110" fill="#FFB900" font-size="72" font-weight="300" letter-spacing="-3">04</text>
+    <text x="24" y="150" fill="#1A1A1A" font-size="22" font-weight="500">Evolucao</text>
+    <text x="24" y="174" fill="#1A1A1A" font-size="22" font-weight="500">com Agent</text>
+    <text x="24" y="210" fill="#737373" font-size="14">Apply 13 agents.</text>
+    <text x="24" y="228" fill="#737373" font-size="14">Automate the next cycle.</text>
+  </g>
+</svg>

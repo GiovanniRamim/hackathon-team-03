@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Inter, system-ui, sans-serif">
+  <rect width="1200" height="560" fill="#F7F7F5"/>
+
+  <text x="60" y="60" fill="#737373" font-family="JetBrains Mono, monospace" font-size="16" font-weight="500" letter-spacing="1.9">ARCHITECTURE TRANSFORMATION · LEGACY → MODERN</text>
+  <text x="60" y="110" fill="#1A1A1A" font-size="42" font-weight="500" letter-spacing="-0.8">From SIFAP 1.0 to SIFAP 2.0</text>
+
+  <g transform="translate(60, 160)">
+    <rect width="540" height="380" fill="#FAF4F2" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="540" height="6" fill="#F25022"/>
+    <text x="32" y="52" fill="#B33816" font-family="JetBrains Mono, monospace" font-size="13" font-weight="500" letter-spacing="1.4">SIFAP 1.0 · LEGACY · 1997</text>
+    <text x="32" y="92" fill="#1A1A1A" font-size="28" font-weight="500">Monolith on mainframe</text>
+
+    <g transform="translate(32, 130)">
+      <rect width="200" height="56" fill="#FFFFFF" stroke="#F25022" stroke-width="1"/>
+      <text x="20" y="24" fill="#B33816" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">FRONTEND</text>
+      <text x="20" y="44" fill="#1A1A1A" font-size="16" font-weight="500">Natural screens</text>
+    </g>
+    <g transform="translate(252, 130)">
+      <rect width="200" height="56" fill="#FFFFFF" stroke="#F25022" stroke-width="1"/>
+      <text x="20" y="24" fill="#B33816" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">BACKEND</text>
+      <text x="20" y="44" fill="#1A1A1A" font-size="16" font-weight="500">Natural programs</text>
+    </g>
+    <g transform="translate(32, 200)">
+      <rect width="200" height="56" fill="#FFFFFF" stroke="#F25022" stroke-width="1"/>
+      <text x="20" y="24" fill="#B33816" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">DATABASE</text>
+      <text x="20" y="44" fill="#1A1A1A" font-size="16" font-weight="500">Adabas DDMs</text>
+    </g>
+    <g transform="translate(252, 200)">
+      <rect width="200" height="56" fill="#FFFFFF" stroke="#F25022" stroke-width="1"/>
+      <text x="20" y="24" fill="#B33816" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">DEPLOY</text>
+      <text x="20" y="44" fill="#1A1A1A" font-size="16" font-weight="500">Mainframe z/OS</text>
+    </g>
+
+    <text x="32" y="300" fill="#737373" font-size="15">287K LOC. Zero tests.</text>
+    <text x="32" y="322" fill="#737373" font-size="15">6 weeks per feature.</text>
+    <text x="32" y="344" fill="#737373" font-size="15">Knowledge lost with retired team.</text>
+  </g>
+
+  <g transform="translate(620, 160)">
+    <rect width="520" height="380" fill="#F4F8E8" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="520" height="6" fill="#7FBA00"/>
+    <text x="32" y="52" fill="#5A8500" font-family="JetBrains Mono, monospace" font-size="13" font-weight="500" letter-spacing="1.4">SIFAP 2.0 · MODERN · 2026</text>
+    <text x="32" y="92" fill="#1A1A1A" font-size="28" font-weight="500">Cloud native on Azure</text>
+
+    <g transform="translate(32, 130)">
+      <rect width="200" height="56" fill="#FFFFFF" stroke="#7FBA00" stroke-width="1"/>
+      <text x="20" y="24" fill="#5A8500" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">FRONTEND</text>
+      <text x="20" y="44" fill="#1A1A1A" font-size="16" font-weight="500">Next.js 15 + TS</text>
+    </g>
+    <g transform="translate(252, 130)">
+      <rect width="200" height="56" fill="#FFFFFF" stroke="#7FBA00" stroke-width="1"/>
+      <text x="20" y="24" fill="#5A8500" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">BACKEND</text>
+      <text x="20" y="44" fill="#1A1A1A" font-size="16" font-weight="500">Java 21 + Spring 3</text>
+    </g>
+    <g transform="translate(32, 200)">
+      <rect width="200" height="56" fill="#FFFFFF" stroke="#7FBA00" stroke-width="1"/>
+      <text x="20" y="24" fill="#5A8500" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">DATABASE</text>
+      <text x="20" y="44" fill="#1A1A1A" font-size="16" font-weight="500">PostgreSQL 16</text>
+    </g>
+    <g transform="translate(252, 200)">
+      <rect width="200" height="56" fill="#FFFFFF" stroke="#7FBA00" stroke-width="1"/>
+      <text x="20" y="24" fill="#5A8500" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">DEPLOY</text>
+      <text x="20" y="44" fill="#1A1A1A" font-size="16" font-weight="500">Azure + Terraform</text>
+    </g>
+
+    <text x="32" y="300" fill="#737373" font-size="15">Typed contracts. Automated tests.</text>
+    <text x="32" y="322" fill="#737373" font-size="15">Hours per feature with agents.</text>
+    <text x="32" y="344" fill="#737373" font-size="15">Knowledge encoded in specs and prompts.</text>
+  </g>
+</svg>

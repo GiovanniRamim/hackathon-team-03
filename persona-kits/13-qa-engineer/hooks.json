@@ -1,0 +1,23 @@
+{
+  "hooks": {
+    "preToolUse": [
+      {
+        "trigger": "edit_file",
+        "description": "Warn when editing test files in a skip/only state",
+        "command": "if echo $TOOL_FILE | grep -qE '\\.(spec|test)\\.(ts|js|tsx|jsx|py)$'; then grep -nE '\\.(only|skip)\\(' $TOOL_FILE 2>/dev/null && echo WARNING: test has .only/.skip; fi; true"
+      }
+    ],
+    "postToolUse": [
+      {
+        "trigger": "edit_file",
+        "description": "Run related tests",
+        "command": "if echo $TOOL_FILE | grep -qE '\\.(ts|js|tsx|jsx)$'; then npx jest --findRelatedTests $TOOL_FILE --passWithNoTests 2>/dev/null || true; fi; true"
+      },
+      {
+        "trigger": "edit_file",
+        "description": "Lint test file",
+        "command": "if echo $TOOL_FILE | grep -qE '\\.(spec|test)\\.'; then npx eslint $TOOL_FILE --quiet 2>/dev/null || true; fi; true"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" font-family="Inter, system-ui, sans-serif">
+  <rect width="1200" height="420" fill="#F7F7F5"/>
+  <rect x="0" y="0" width="1200" height="6" fill="#F25022"/>
+
+  <text x="60" y="80" fill="#B33816" font-family="JetBrains Mono, monospace" font-size="20" font-weight="500" letter-spacing="2.4">HACKATHON DATACORP 2026 · SIFAP MODERNIZATION</text>
+  <text x="60" y="150" fill="#1A1A1A" font-size="56" font-weight="500" letter-spacing="-1">From Natural and Adabas</text>
+  <text x="60" y="210" fill="#1A1A1A" font-size="56" font-weight="500" letter-spacing="-1">to Java 21 and Next.js 15</text>
+  <text x="60" y="260" fill="#737373" font-size="22" font-weight="400">100 developers. 10 teams. 1 day. 4 stages guided by AI agents.</text>
+
+  <g transform="translate(60, 310)">
+    <rect width="240" height="72" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="4" fill="#F25022"/>
+    <text x="20" y="32" fill="#B33816" font-family="JetBrains Mono, monospace" font-size="12" font-weight="500" letter-spacing="1.2">ESTAGIO 01</text>
+    <text x="20" y="56" fill="#1A1A1A" font-size="18" font-weight="500">Arqueologia</text>
+  </g>
+
+  <g transform="translate(320, 310)">
+    <rect width="240" height="72" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="4" fill="#00A4EF"/>
+    <text x="20" y="32" fill="#0076AC" font-family="JetBrains Mono, monospace" font-size="12" font-weight="500" letter-spacing="1.2">ESTAGIO 02</text>
+    <text x="20" y="56" fill="#1A1A1A" font-size="18" font-weight="500">Spec Moderna</text>
+  </g>
+
+  <g transform="translate(580, 310)">
+    <rect width="240" height="72" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="4" fill="#7FBA00"/>
+    <text x="20" y="32" fill="#5A8500" font-family="JetBrains Mono, monospace" font-size="12" font-weight="500" letter-spacing="1.2">ESTAGIO 03</text>
+    <text x="20" y="56" fill="#1A1A1A" font-size="18" font-weight="500">Reconstrucao</text>
+  </g>
+
+  <g transform="translate(840, 310)">
+    <rect width="240" height="72" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="1"/>
+    <rect x="0" y="0" width="240" height="4" fill="#FFB900"/>
+    <text x="20" y="32" fill="#B88500" font-family="JetBrains Mono, monospace" font-size="12" font-weight="500" letter-spacing="1.2">ESTAGIO 04</text>
+    <text x="20" y="56" fill="#1A1A1A" font-size="18" font-weight="500">Evolucao Agent</text>
+  </g>
+</svg>

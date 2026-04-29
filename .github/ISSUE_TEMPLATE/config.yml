@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Team Flow Reference
+    url: https://github.com/paulasilvatech/hackathon-datacorp-team-kit/blob/main/TEAM-FLOW.md
+    about: How the 10 personas work together — read before opening any issue.
+  - name: 🤝 Need a facilitator
+    url: https://github.com/paulasilvatech/hackathon-datacorp-team-kit/blob/main/TEAM-FLOW.md#4-the-20-minute-rule
+    about: Stuck for 20 minutes? Raise your hand for the blue-cord team.

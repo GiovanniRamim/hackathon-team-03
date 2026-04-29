@@ -1,0 +1,99 @@
+name: 🧱 Architecture Decision Record (ADR)
+description: Document a significant architecture or design decision
+title: "[ADR] "
+labels: [ "adr", "stage-2", "architecture" ]
+projects: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > Use this template when you have a non-trivial decision (>1 hour to revisit later).
+        > Examples: choice of monolith vs microservices, persistence strategy, auth model.
+
+  - type: input
+    id: adr-number
+    attributes:
+      label: ADR number (sequential)
+      placeholder: "0007"
+    validations:
+      required: true
+
+  - type: input
+    id: adr-title
+    attributes:
+      label: Title
+      placeholder: "Use modular monolith over microservices for SIFAP 2.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What is the issue we're seeing that motivates this decision?
+      placeholder: |
+        SIFAP 2.0 must replace a monolithic Natural/Adabas system that has 15
+        tightly-coupled business modules. The team needs to decide whether to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision
+      description: The change we are proposing or have agreed to make.
+      placeholder: "We will adopt a modular monolith using Spring Boot..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: |
+        - Microservices per bounded context — rejected because team is small (10 people)
+        - Continue Natural — rejected per Stage 1 archaeology findings
+    validations:
+      required: true
+
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: What becomes easier? What becomes harder? Any risks?
+      placeholder: |
+        Easier: shared transaction context; single deployable
+        Harder: enforcing module boundaries; risk of "big ball of mud"
+        Mitigation: enforce package-level ArchUnit tests
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - proposed
+        - accepted
+        - deprecated
+        - superseded
+    validations:
+      required: true
+
+  - type: input
+    id: supersedes
+    attributes:
+      label: Supersedes (ADR number, if any)
+      placeholder: "N/A"
+
+  - type: dropdown
+    id: lead-persona
+    attributes:
+      label: Authoring persona
+      options:
+        - Enterprise Architect
+        - Software Architect
+        - Technical Lead
+    validations:
+      required: true

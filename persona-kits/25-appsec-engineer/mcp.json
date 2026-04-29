@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "github-advanced-security": {
+      "description": "CodeQL, secret scanning, dependency vulnerabilities"
+    },
+    "semgrep": {
+      "description": "Semgrep SAST rules for secure-coding enforcement"
+    },
+    "microsoft-defender": {
+      "description": "Cloud security posture and threat analytics"
+    }
+  }
+}
