@@ -24,12 +24,12 @@ You are modernizing the **SIFAP** system (Social Benefits Payment System) from N
 ## Active Personas on This Team
 
 <!-- TODO: Each team fills in the 10 active personas here -->
-- [ ] Product Owner
-- [ ] Requirements Engineer
-- [ ] Enterprise Architect
-- [ ] Software Architect
-- [ ] Technical Lead
-- [ ] Developer
+- [X] Product Owner - Valney
+- [X] Requirements Engineer - Calazans
+- [X] Enterprise Architect - Giovanni
+- [X] Software Architect - Caio
+- [X] Technical Lead - Fabio
+- [X] Developer - João, Felipe
 - [ ] DBA
 - [ ] QA Engineer
 - [ ] DevOps Engineer
