@@ -46,3 +46,8 @@ You are modernizing the **SIFAP** system (Social Benefits Payment System) from N
 - [Specky SDD Plugin](https://github.com/paulasilvatech/specky)
 - [SIFAP Legacy](https://github.com/paulasilvatech/sifap-legacy)
 - **Reference SIFAP 2.0 Spec** (shared by facilitators)
+
+<!-- SPECKIT START -->
+For additional context about technologies to be used, project structure,
+shell commands, and other important information, read the current plan
+<!-- SPECKIT END -->
